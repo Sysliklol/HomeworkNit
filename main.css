@@ -1,0 +1,107 @@
+.bl-background {
+    background: #FFFFFF;
+    padding: 20px;
+	margin:auto;
+	min-width:1000px;
+	max-width:1000px;
+
+}
+.bl-bought {
+   background: #cdcbcb;
+   border-radius: 10px;
+    float:	right;
+	width:300px;
+	border-radius: 10px;
+	margin-left:10px;
+	clear:left;
+}
+.bl-list {
+  border-radius: 10px;
+ 
+    max-width:1500px;
+	min-width:400px;
+ 
+    margin-bottom: 10px;
+	background: #cdcbcb;
+	   float:right;
+	
+	
+}
+
+
+
+
+
+
+/*Кнопки*/
+.bl-buy{
+width:100px;
+    height:30px;
+    
+    border: 2px solid #f5f5f5;
+	border-radius:5px;
+}
+.bl-title{
+   padding:10px;
+}
+.bl-product{
+display:inline-block;
+ width: 150px;
+    
+    margin: 10px;
+
+
+
+}
+.bl-label {
+display:inline-block;
+ width: 20px;
+   padding-left:10px;
+    margin-left: 5px;
+	margin-right:5px;
+    background: #cdcbcb;
+}
+.bl-plus {
+display:inline-block;
+ 
+    width:30px;
+    height:30px;
+    
+    border: 2px solid #f5f5f5;
+    border-radius: 50%;
+    color:#f5f5f5;
+    text-align:center;
+    text-decoration:none;
+    
+    box-shadow: 0 0 3px gray;
+    font-size:20px;
+    font-weight:bold;
+	
+    background: #04a613;
+}
+.bl-minus {
+display:inline-block;
+ 
+    width:30px;
+    height:30px;
+    
+    border: 2px solid #f5f5f5;
+    border-radius: 50%;
+    color:#f5f5f5;
+    text-align:center;
+    text-decoration:none;
+    
+    box-shadow: 0 0 3px gray;
+    font-size:20px;
+    font-weight:bold;
+
+    background: red;
+}
+.bl-buttons{
+display:inline-block;
+ width: 150px;
+   margin-left:150px;
+    
+
+
+}
