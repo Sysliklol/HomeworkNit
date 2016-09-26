@@ -1,9 +1,10 @@
 body {
 width:100%; 
 height:100%;
+background: #cdcbcb;
 }
 .bl-background {
-    background: #FFFFFF;
+    background: #cdcbcb;
     padding: 20px;
 	margin:auto;
 	min-width:1000px;
@@ -11,8 +12,8 @@ height:100%;
 
 }
 .bl-bought {
-   background: #cdcbcb;
-   border-radius: 10px;
+   background: #FFFFFF;
+ 
     float:	right;
 	width:300px;
 	border-radius: 10px;
@@ -20,21 +21,30 @@ height:100%;
 	clear:left;
 }
 .bl-list {
-  border-radius: 10px;
+
   
     max-width:1500px;
 	min-width:400px;
  
-    margin-bottom: 10px;
-	background: #cdcbcb;
+     border-bottom: 2px solid #000000;
+	background: #FFFFFF;
 	   float:right;
 	
 	
 }
 input[type="text"] {
-margin:10px;
 
-  width: 258px;
+width: 266px;
+
+    padding: 12px 20px;
+    margin: 8px ;
+    box-sizing: border-box;
+    border: 3px solid #ccc;
+     
+    transition: 0.5s;
+    outline: none;
+
+  
 	
 }
 
@@ -121,6 +131,11 @@ display:inline-block;
 
 
 }
+.bl-buttons,.bl-buy1{
+display:inline-block;
+width:25%
+ margin-left:0px;
+}
 .bl-banner{
  position:absolute;
  bottom:-60px;
@@ -128,15 +143,16 @@ display:inline-block;
  height:100px;
  width:100px;
  background-color:#660066;
- 
+ transition:	all	1s	ease
 }
 .bl-banner:hover{
-position:absolute;
+
  bottom:0px;
- left:20px;
- height:100px;
- width:100px;
- background-color:#660066;
+
+
+ 
+ 
+ 
 }
 .bannerTitleText{
 padding-left:5px;
@@ -148,4 +164,25 @@ padding-left:5px;
 padding-top:20px;
 color:white;
 
+}
+.tooltip {
+    position: relative;
+    display: inline-block;
+    border-bottom: 1px dotted black; 
+}
+.tooltip .tooltiptext {
+    visibility: hidden;
+    width: 120px;
+    background-color: black;
+    color: #fff;
+    text-align: center;
+    padding: 5px 0;
+    border-radius: 6px;
+ 
+    
+    position: absolute;
+    z-index: 1;
+}
+.tooltip:hover .tooltiptext {
+    visibility: visible;
 }
