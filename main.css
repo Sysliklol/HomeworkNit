@@ -7,33 +7,39 @@ height:100%;
     background: #DADADA;
     padding: 20px;
 
-	min-width:900px;
+	margin:auto;
     font-family: Lato,'Helvetica Neue',Arial,Helvetica,sans-serif;
-    margin:auto;
+
 
 }
-.bl-bought {
-   background: #FFFFFF;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-    float:	right;
-	width:300px;
-	border-radius: 10px;
-	margin-left:10px;
-	clear:left;
-}
+
 .bl-list {
 
   display:inline-block;
-    box-shadow: 0 -.25em 0 0 rgba(34,36,38,.15) inset;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.17);
 	min-width:470px;
- border-top: 2px solid rgba(34,36,38,.15);
-     border-bottom: 1px solid rgba(34,36,38,.15);
+      border-top: 2px solid rgba(34, 36, 38, 0.15);
+     border-bottom: 1px solid rgba(34,36,38,0.15);
     border-radius:10px;
 	background: #FFFFFF;
+
+    float:	right;
     margin:auto;
-	   float:right;
 	
-	
+}
+.bl-bought {
+
+    background: #FFFFFF;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.17);
+
+    float:	right;
+    width:300px;
+    border-radius: 10px;
+
+    margin-right:8%;
+    margin-left:10px;
+
+
 }
 input[type="text"] {
 
@@ -42,7 +48,7 @@ width: 80%;
     padding: 12px 20px;
     margin-right:0px;
     box-sizing: border-box;
-    border: 3px solid #7096cc;
+    border: 2px solid #7096cc;
     border-radius:5px;
     transition: 0.5s;
     outline: none;
@@ -51,7 +57,7 @@ width: 80%;
 	
 }
 .bl-product{
-    border-top-color:rgba(34,36,38,0.15);
+    border-top-color:rgba(34,36,38,0.15) ;
     border-top-style: solid;
 
     min-width: 400px;
@@ -67,11 +73,81 @@ width: 80%;
 
 
 /*Кнопки*/
+.bl-plus:hover:after{
+    background-color: blueviolet;
+    left:-14px;
+    border-radius: 5px;
+    font-size:10px;
+    bottom: 35px;
+    color: #fff;
+    content: attr(data-tooltip);
+    padding: 5px ;
+    position: absolute;
+    z-index: 2;
+    width: 50px;
+    content: "plus";
+}
+.bl-minus:hover:after{
+    background-color: blueviolet;
+    left:-14px;
+    border-radius: 5px;
+    font-size:10px;
+    bottom: 35px;
+    color: #fff;
+    content: attr(data-tooltip);
+    padding: 5px ;
+    position: absolute;
+    z-index: 2;
+    width: 50px;
+    content: "minus";
+}
+.bl-buy:hover:after{
+    background-color: blueviolet;
+    left: 14px;px;
+    border-radius: 5px;
+    font-size:10px;
+    bottom: 35px;
+    color: #fff;
+    content: attr(data-tooltip);
+    padding: 5px ;
+    position: absolute;
+    z-index: 2;
+    width: 50px;
+    content: "buy";
+}
+.bl-x:hover:after{
+    background-color: blueviolet;
+    left:-10px;
+    border-radius: 5px;
+    font-size:10px;
+    bottom: 35px;
+    color: #fff;
+    content: attr(data-tooltip);
+    padding: 5px ;
+    position: absolute;
+    z-index: 2;
+    width: 50px;
+    content: "delete";
+}
+.bl-buy1:hover:after{
+    background-color: blueviolet;
+    left:2px;
+    border-radius: 5px;
+    font-size:10px;
+    bottom: 35px;
+    color: #fff;
+    content: attr(data-tooltip);
+    padding: 5px ;
+    position: absolute;
+    z-index: 2;
+    width: 50px;
+    content: "add";
+}
 .addField{
     padding:4px;
 }
 .bl-x{
-    border-radius: 3px;
+    border-radius: 7px;
     font-size: 16px;
     padding-top: 5px;
     padding-bottom:3px;
@@ -82,30 +158,38 @@ width: 80%;
 
     background-color: red;
     color:white;
-    box-shadow: 0 -.25em 0 0 rgba(34,36,38,.15) inset;
+    box-shadow: 0 -.25em 0 0 rgba(34,36,38,0.15) inset;
     float:right;
-
+    position:relative;
 }
 .bl-buy{
-    width:100px;
-    height:30px;
+
+    font-size: 16px;
+    padding-top: 5px;
+    padding-bottom:3px;
+    padding-left: 12px;
+    padding-right: 12px;
+    color:#90a4ae;
     float:right;
-    box-shadow: 0 -.25em 0 0 rgba(34,36,38,.15) inset;
+    box-shadow: 0 -.25em 0 0 rgba(34,36,38,0.15) inset;
     border: 3px solid #f5f5f5;
 
-    border-radius:5px;
+    border-radius:7px;
+    position:relative;
 }
 .bl-buy1{
+    font-size: 16px;
     display:inline-block;
     height:50px;
     width:20%;
     color:white;
     border: 2px solid #f5f5f5;
-    box-shadow: 0 -.25em 0 0 rgba(34,36,38,.15) inset;
+    box-shadow: 0 -.25em 0 0 rgba(34,36,38,0.15) inset;
     background-color:#7096cc;
-    margin-rught:0px;
+    margin-right:0px;
 
 	border-radius:5px;
+    position:relative;
 }
 .bl-title{
    padding:10px;
@@ -120,7 +204,7 @@ display:inline-block;
     background: #cdcbcb;
 }
 .bl-plus {
-display:inline-block;
+
  
     width:30px;
     height:30px;
@@ -136,6 +220,8 @@ display:inline-block;
     font-weight:bold;
 	
     background: #04a613;
+    position: relative;
+
 }
 .bl-minus {
 display:inline-block;
@@ -154,6 +240,7 @@ display:inline-block;
     font-weight:bold;
 
     background: red;
+    position:relative;
 }
 .bl-buttons{
 display:inline-block;
@@ -181,7 +268,7 @@ width:15%;
 .bl-banner:hover{
 
  bottom:0px;
-
+ background-color:#0000bf;
 
  
  
