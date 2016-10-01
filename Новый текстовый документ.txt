@@ -1,0 +1,9 @@
+$(function(){
+      var LIST = $('bl-list');
+      var TEMP = $(".bl-row").html();
+
+      $()
+
+
+
+});
