@@ -1,20 +1,20 @@
 body {
 width:100%; 
 height:100%;
-background: #cdcbcb;
+    background: #DADADA;
 }
 .bl-background {
-    background: #cdcbcb;
+    background: #DADADA;
     padding: 20px;
 
 	min-width:900px;
-	max-width:1500px;
+    font-family: Lato,'Helvetica Neue',Arial,Helvetica,sans-serif;
     margin:auto;
 
 }
 .bl-bought {
    background: #FFFFFF;
-
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
     float:	right;
 	width:300px;
 	border-radius: 10px;
@@ -24,12 +24,13 @@ background: #cdcbcb;
 .bl-list {
 
   display:inline-block;
-    max-width:1200px;
+    box-shadow: 0 -.25em 0 0 rgba(34,36,38,.15) inset;
 	min-width:470px;
- border-top: 1px solid #000000;
-     border-bottom: 1px solid #000000;
+ border-top: 2px solid rgba(34,36,38,.15);
+     border-bottom: 1px solid rgba(34,36,38,.15);
     border-radius:10px;
 	background: #FFFFFF;
+    margin:auto;
 	   float:right;
 	
 	
@@ -39,9 +40,9 @@ input[type="text"] {
 width: 80%;
 
     padding: 12px 20px;
-    margin: 8px ;
+    margin-right:0px;
     box-sizing: border-box;
-    border: 3px solid #ccc;
+    border: 3px solid #7096cc;
     border-radius:5px;
     transition: 0.5s;
     outline: none;
@@ -50,9 +51,11 @@ width: 80%;
 	
 }
 .bl-product{
-    border-top: 0.5px solid #000000;
+    border-top-color:rgba(34,36,38,0.15);
+    border-top-style: solid;
+
     min-width: 400px;
-    max-width: 1000px;
+
     padding: 10px;
 
 
@@ -64,28 +67,44 @@ width: 80%;
 
 
 /*Кнопки*/
-
+.addField{
+    padding:4px;
+}
 .bl-x{
-    width:30px;
-    height:30px;
-    float:right;
+    border-radius: 3px;
+    font-size: 16px;
+    padding-top: 5px;
+    padding-bottom:3px;
+    padding-left: 12px;
+    padding-right: 12px;
+    margin-left:4px;
+    margin-bottom:10px;
+
+    background-color: red;
     color:white;
-    background-color: #ff0000;
-    border: 2px solid #f5f5f5;
-    border-radius:5px;
+    box-shadow: 0 -.25em 0 0 rgba(34,36,38,.15) inset;
+    float:right;
+
 }
 .bl-buy{
     width:100px;
     height:30px;
     float:right;
-    border: 2px solid #f5f5f5;
+    box-shadow: 0 -.25em 0 0 rgba(34,36,38,.15) inset;
+    border: 3px solid #f5f5f5;
+
     border-radius:5px;
 }
 .bl-buy1{
     display:inline-block;
-    height:30px;
-    
+    height:50px;
+    width:20%;
+    color:white;
     border: 2px solid #f5f5f5;
+    box-shadow: 0 -.25em 0 0 rgba(34,36,38,.15) inset;
+    background-color:#7096cc;
+    margin-rught:0px;
+
 	border-radius:5px;
 }
 .bl-title{
@@ -201,16 +220,20 @@ color:white;
     visibility: visible;
 }
 .addButton{
-
+ display:inline-block;
+    width:20%;
 }
 @media	 screen and (max-width:	700px)	{
     .bl-list{
+
         box-sizing: border-box;
         width:100%;
         margin: auto;
+        margin-top:20px;
     }
 
     .bl-background{
+        margin-top:20px;
         min-width: 380px;
         max-width:480px;
     }
@@ -219,6 +242,7 @@ color:white;
     .bl-bought {
 
         margin: auto;
+        margin-bottom:20px;
         width: 100%;
         margin-top: 20px;
 
@@ -228,6 +252,7 @@ color:white;
 @media	print {
 
     .bl-banner{
+
         position:absolute;
         bottom:10px;
         left:20px;
