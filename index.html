@@ -12,29 +12,42 @@
 <div class="bl-background">
     <div class="bl-bought">
         <div class="bl-title">Залишилося</div>
-        <div class="bl-title">Куплене</div>
+        <div id="add">
+        <div class = "bought-container">
+            <div class = "new-item">
+              <span class="item-bought">Помідори</span>
+              <span class="item-bought-count"> 3 </span>
+            </div>
+        </div>
+        </div>
+            <div class="bl-title">Куплене</div>
     </div>
     
     <div class="bl-list">
         <div class ="addField">
-        <input type="text" />
-        <span id="#addButton">
-                <button class="bl-buy1">Купити</button> 
+            <div class="Field">
+        <input type="text" class="add_inputer" />
+                <span class="bl-buy1">
+                <button id="addButton">Купити</button>
             </span>
+            </div>
+
+
         </div>
 
        
 
         
-
+         <div class="bl-row"  >
             <div class="bl-product">
+             <div class="b-product" contenteditable="true">
                 Помідори
-
+                </div>
 
                 <button class="bl-minus">-</button>
-               <!-- <div class="bl-label">-->
+                <div class="bl-label">
                     3
-                <!--</div>-->
+                </div>
                 <button class="bl-plus">+</button>
 
                 <button class="bl-x">x</button>
@@ -42,7 +55,7 @@
 
                 </div>
         </div>
- 
+    </div>
     
    
 </div>
